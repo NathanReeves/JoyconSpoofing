@@ -1,0 +1,158 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww14220\viewh17400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 On MacOS using the Bluetooth Explorer App, here\'92s the SDP record im getting from my code running on ESP32\
+\
+ServiceSearchAttributeRequest:\
+	ServiceSearchPattern = \{ <1002> \};\
+	MaximumAttributeByteCount = 0xffff;\
+	AttributeIDList = \{ 0x0000-0xffff \};\
+\
+ServiceSearchAttributeResponse:\
+	AttributeLists = \{\
+		\{\
+			0x0000 = uint32(0),\
+			0x0009 = \{ \{ uuid16(01 00), uint16(256) \} \},\
+			0x0005 = \{ uuid16(10 02) \},\
+			0x0001 = \{ uuid16(10 00) \},\
+			0x0100 = string(Wireless Gamepad),\
+			0x0006 = \{ uint16(25966), uint16(106), uint16(256) \},\
+			0x0101 = string(Gamepad),\
+			0x0200 = \{ uint16(256) \},\
+			0x0004 = \{ \{ uuid16(01 00), uint16(1) \}, \{ uuid16(00 01) \} \}\
+		\},\
+		\{\
+			0x0000 = uint32(65536),\
+			0x020a = bool8(TRUE),\
+			0x0207 = \{ \{ uint16(1033), uint16(256) \} \},\
+			0x0005 = \{ uuid16(10 02) \},\
+			0x0204 = bool8(TRUE),\
+			0x000d = \{ \{ \{ uuid16(01 00), uint16(19) \}, \{ uuid16(00 11) \} \} \},\
+			0x020c = uint16(3200),\
+			0x0201 = uint16(273),\
+			0x0100 = string(Wireless Gamepad),\
+			0x0209 = bool8(TRUE),\
+			0x0206 = \{ \{ uint8(34), string(\uc0\u133 0	)\
+\uc0\u149 \
+U\uc0\u129 	)\u149 \u129 u\u149 \u129 \u149 \u129 \'c09\u149 \u129 	)\u149 \u129 u\u149 4\u129 \u133 !	u\u149 ?\u129 \u133 \u129 	u\u149 ?\u129 \u133 	u\u149 ?\u145 \u131 \u133 	u\u149 ?\u145 \u131 \u133 \u128 	u\u149 ?\u145 \u131 \u133 \u130 	u\u149 ?\u145 \u131 \'c0) \} \},\
+			0x0004 = \{ \{ uuid16(01 00), uint16(17) \}, \{ uuid16(00 11) \} \},\
+			0x020e = bool8(FALSE),\
+			0x0203 = uint8(33),\
+			0x0102 = string(Nintendo),\
+			0x0001 = \{ uuid16(11 24) \},\
+			0x0009 = \{ \{ uuid16(11 24), uint16(257) \} \},\
+			0x0006 = \{ uint16(25966), uint16(106), uint16(256) \},\
+			0x0205 = bool8(TRUE),\
+			0x020d = bool8(FALSE),\
+			0x0202 = uint8(8),\
+			0x0101 = string(Gamepad)\
+		\}\
+	\};\
+\
+\
+\
+
+\fs72 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\fs24 \
+\
+This is from a Joy-Con (R):\
+\
+ServiceSearchAttributeRequest:\
+	ServiceSearchPattern = \{ <1002> \};\
+	MaximumAttributeByteCount = 0xffff;\
+	AttributeIDList = \{ 0x0000-0xffff \};\
+\
+ServiceSearchAttributeResponse:\
+	AttributeLists = \{\
+		\{\
+			0x0000 = uint32(0),\
+			0x0009 = \{ \{ uuid16(01 00), uint16(256) \} \},\
+			0x0005 = \{ uuid16(10 02) \},\
+			0x0001 = \{ uuid16(10 00) \},\
+			0x0100 = string(Wireless Gamepad),\
+			0x0006 = \{ uint16(25966), uint16(106), uint16(256) \},\
+			0x0101 = string(Gamepad),\
+			0x0200 = \{ uint16(256) \},\
+			0x0004 = \{ \{ uuid16(01 00), uint16(1) \}, \{ uuid16(00 01) \} \}\
+		\},\
+		\{\
+			0x0000 = uint32(65536),\
+			0x020a = bool8(TRUE),\
+			0x0207 = \{ \{ uint16(1033), uint16(256) \} \},\
+			0x0005 = \{ uuid16(10 02) \},\
+			0x0204 = bool8(TRUE),\
+			0x000d = \{ \{ \{ uuid16(01 00), uint16(19) \}, \{ uuid16(00 11) \} \} \},\
+			0x020c = uint16(3200),\
+			0x0201 = uint16(273),\
+			0x0100 = string(Wireless Gamepad),\
+			0x0209 = bool8(TRUE),\
+			0x0206 = \{ \{ uint8(34), string(	\'a1\'ff\uc0\u133 !	!u\u149 0\u129 \u133 0	0u\u149 0\u129 \u133 1	1u\u150 i\u129 \u133 2	2u\u150 i\u129 \u133 3	3u\u150 i\u129 \u133 ?	)\u149 \u129 	9\u149 \u129 B	u\u149 \u129 	0	1	3	4\u149 \u129 \'ff\u133 	u\u149 0\u145 \u133 	u\u149 0\u145 \u133 	u\u149 0\u145 \u133 	u\u149 0\u145 \'c0) \} \},\
+			0x0004 = \{ \{ uuid16(01 00), uint16(17) \}, \{ uuid16(00 11) \} \},\
+			0x020e = bool8(FALSE),\
+			0x0203 = uint8(33),\
+			0x0102 = string(Nintendo),\
+			0x0001 = \{ uuid16(11 24) \},\
+			0x0009 = \{ \{ uuid16(11 24), uint16(257) \} \},\
+			0x0006 = \{ uint16(25966), uint16(106), uint16(256) \},\
+			0x0205 = bool8(TRUE),\
+			0x020d = bool8(FALSE),\
+			0x0202 = uint8(8),\
+			0x0101 = string(Gamepad)\
+		\}\
+	\};\
+\
+
+\fs72 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+
+\fs24 \
+And this is from an 8bitdo SF30\
+\
+ServiceSearchAttributeRequest:\
+	ServiceSearchPattern = \{ <1002> \};\
+	MaximumAttributeByteCount = 0xffff;\
+	AttributeIDList = \{ 0x0000-0xffff \};\
+\
+ServiceSearchAttributeResponse:\
+	AttributeLists = \{\
+		\{\
+			0x0000 = uint32(0),\
+			0x0009 = \{ \{ uuid16(01 00), uint16(256) \} \},\
+			0x0005 = \{ uuid16(10 02) \},\
+			0x0001 = \{ uuid16(10 00) \},\
+			0x0100 = string(Wireless Gamepad),\
+			0x0006 = \{ uint16(25966), uint16(106), uint16(256) \},\
+			0x0101 = string(Gamepad),\
+			0x0200 = \{ uint16(256) \},\
+			0x0004 = \{ \{ uuid16(01 00), uint16(1) \}, \{ uuid16(00 01) \} \}\
+		\},\
+		\{\
+			0x0000 = uint32(65536),\
+			0x020a = bool8(TRUE),\
+			0x0207 = \{ \{ uint16(1033), uint16(256) \} \},\
+			0x0005 = \{ uuid16(10 02) \},\
+			0x0204 = bool8(TRUE),\
+			0x000d = \{ \{ \{ uuid16(01 00), uint16(19) \}, \{ uuid16(00 11) \} \} \},\
+			0x020c = uint16(3200),\
+			0x0201 = uint16(273),\
+			0x0100 = string(Wireless Gamepad),\
+			0x0209 = bool8(TRUE),\
+			0x0206 = \{ \{ uint8(34), string(	\'a1\'ff\uc0\u133 !	!u\u149 0\u129 \u133 0	0u\u149 0\u129 \u133 1	1u\u150 i\u129 \u133 2	2u\u150 i\u129 \u133 3	3u\u150 i\u129 \u133 ?	)\u149 \u129 	9\u149 \u129 B	u\u149 \u129 	0	1	3	4\u149 \u129 \'ff\u133 	u\u149 0\u145 \u133 	u\u149 0\u145 \u133 	u\u149 0\u145 \u133 	u\u149 0\u145 \'c0) \} \},\
+			0x0004 = \{ \{ uuid16(01 00), uint16(17) \}, \{ uuid16(00 11) \} \},\
+			0x020e = bool8(FALSE),\
+			0x0203 = uint8(33),\
+			0x0102 = string(Nintendo),\
+			0x0001 = \{ uuid16(11 24) \},\
+			0x0009 = \{ \{ uuid16(11 24), uint16(257) \} \},\
+			0x0006 = \{ uint16(25966), uint16(106), uint16(256) \},\
+			0x0205 = bool8(TRUE),\
+			0x020d = bool8(FALSE),\
+			0x0202 = uint8(8),\
+			0x0101 = string(Gamepad)\
+		\}\
+	\};\
+\
+}
